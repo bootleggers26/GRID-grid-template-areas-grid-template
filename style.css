@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: 50px 150px 30px;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer sidebar";
+}
+
+.item-a {
+  grid-area: header;
+}
+
+.item-b {
+  grid-area: main;
+}
+
+.item-c {
+  grid-area: sidebar;
+}
+
+.item-d {
+  grid-area: footer;
+}
+
+.item {
+  color: #a31f1f;
+  border: 1px solid black; /* добавлено для визуализации */
+  display: flex; /* добавлено для центрирования содержимого */
+  justify-content: center; /* добавлено для центрирования содержимого */
+  align-items: center; /* добавлено для центрирования содержимого */
+  height: 100%; /* добавлено для корректного отображения высоты */
+}
